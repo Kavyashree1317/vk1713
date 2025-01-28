@@ -2,3 +2,6 @@ for jenkins download : jenkins.msi     localhost:8080
 sonarqube : https://www.sonarsource.com/products/sonarqube/downloads/historical-downloads/   localhost:9000
 jdk 17
 maven : https://maven.apache.org/download.cgi
+
+
+https://drive.google.com/drive/folders/1Mlv6bHOMOlL5Pxihe0NaCjQpvbLynflp
