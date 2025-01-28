@@ -1,3 +1,8 @@
+jankins ->dashboard
+    manage piugins :avilable piugins 
+        sonarqube scanncer ->inastall 
+
+
 sonarqube 
   -careate a local project 
       projectname :lab6
