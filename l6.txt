@@ -1,0 +1,45 @@
+sonarqube 
+  -careate a local project 
+      projectname :lab6
+      projectkey: lab6
+      makin branch name : main   ->next
+  -set up project for clean as seeting
+     use the global setting -> create project 
+  -analyze your project
+    locally ->provide a taken ->Token name : lab6 -> generate
+
+jenkins dashboard 
+  -manage jenkins -> credentials ->global
+      username with password: secret text
+      secret : paste the text which is copied from sonarqube
+      ID: lab6
+      Description: Token for lab6 -> create 
+-manage jenkins -> system -> 
+      Sonarqube Servers -> add Sonarqube
+          name: Sonarqube 
+          server authentication taken -> select (taken for lab6) -> save
+manages jenkins -> tools 
+      sonarqube scanner installations
+        name: sonarqube -> save 
+Dashborad
+  new item 
+    enter an item name : lab6 
+    select - freestyle project -> ok
+    -general 
+      source code management -> select git 
+      repository url: paste the git repository http (address)
+      branch specifier : */main
+    -bulid enviornmrnt : prepare sonarqube scanner environment : taken for lab6
+
+build steps -> add build step -> execute sonarqube scanner
+      analysis properties
+            sonar.projectName=lab6
+sonar.projectKey=lab6
+sonar.projeactVersion=1.0
+sonar.language=java
+sonar.sources=src/main/java
+sonar.test=src/test/java
+- save 
+
+dashborad  
+  build new 
